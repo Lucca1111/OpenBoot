@@ -1,0 +1,18 @@
+using System;
+using System.Reflection.PortableExecutable;
+
+namespace OpenBoot3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("un coche esta compuesto por los siguientes elementos");
+            int puertas = 4, ruedas = 4;
+            Console.WriteLine( puertas + " puertas");
+            Console.WriteLine(ruedas + " ruedas");
+            Console.WriteLine("indicar que marca es su auto: ");
+            string marca = Console.ReadLine();
+            Console.WriteLine("Tiene la ITV vigene?");
+            string itv = Console.ReadLine();
+        }
