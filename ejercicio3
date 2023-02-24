@@ -1,0 +1,20 @@
+using System;
+
+namespace OpenBoot2
+
+{
+    internal class Program
+    {
+        static  void Main(string[] args)
+        {
+            Console.WriteLine("ingrese el nombre de una persona");
+            string nombre = Console.ReadLine();
+            Console.WriteLine("ingrese la edad de la persona");
+            int edad = Int32.ToString(Console.ReadLine());
+            Console.WriteLine("ingrese el mail de la persona");
+            string mail = Console.ReadLine();
+            Console.WriteLine($"El nombre de la persona es:{nombre} , la edad es {edad} y su mail es {mail}");
+        }
+
+        }
+}
