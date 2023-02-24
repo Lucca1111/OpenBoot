@@ -1,0 +1,8 @@
+namespace OpenBoot2
+{
+internal class Program
+{
+static void Main(string [] args)
+{
+string hour = DateTime.Now.ToString("h:mm:ss tt");
+Console.WriteLine(hour);
