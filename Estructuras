@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Estructuras
+{
+    internal class Cliente
+    {
+        public string NombreCompleto { get; set; }
+        public string telefono { get; set; }
+        public string direccion { get; set; }
+        public string email { get; set; }
+        public bool isNew { get; set; }
+
+        public override string ToString()
+        {
+            return $"Nombre: {NombreCompleto}\nTelefono: {telefono}\nDireccion:{direccion}" +
+                $"\nEmail:{email}\nIsNew:{(isNew ? "si" : "no")}";
+        }
+
+    }
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Cliente cliente = new Cliente
+            {
+                NombreCompleto = "Juan Perez",
+                telefono = "15648834",
+                direccion = "Larrea 154",
+                email = "jperez@gmail.com",
+                isNew = true
+            };
+
+            Console.WriteLine(cliente);
+        }
+    }
+}
